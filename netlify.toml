@@ -1,0 +1,9 @@
+[build]
+  command = "npm install && npm run build"
+  publish = "build"
+
+[context.production.environment]
+  PNPM_VERSION = "latest"
+
+[build.environment]
+  NODE_VERSION = "20.15.0"
